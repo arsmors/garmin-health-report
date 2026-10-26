@@ -72,6 +72,24 @@ On non-Windows systems, use `.venv/bin/python` instead of
   Expand **Why this appeared** for dates and supporting evidence.
 - The recovery timeline brings HRV, sleep duration and score, resting heart
   rate, Body Battery, and stress together.
+- **Training outlook · our estimate** is our qualitative training context, not
+  Garmin's official Training Readiness score. It shows reasons, the reading
+  date, and completeness across five recovery groups. No numerical score is
+  generated.
+- An outlook requires at least three comparable groups from the same date
+  (today or yesterday), including sleep and either HRV or resting heart rate.
+  Sleep duration and score count together. Old, future, missing, or
+  insufficient-history readings do not count.
+- One caution group gives "Keep it flexible"; two or more, or unusually high
+  recorded exercise volume, give "Consider an easier day." Otherwise the
+  matching readings are "Close to usual," not a guarantee of readiness.
+  Missing activity history is shown explicitly and never treated as no exercise.
+- The optional **How do you feel today?** selection applies immediately without
+  a submit button, with an on-screen confirmation of its effect. The answer is
+  not sent or saved, stays in page memory, and resets on page reload. Feeling
+  tired or unwell makes the displayed outlook more cautious; feeling well
+  never overrides the data's cautions. Refresh or revisit the app for updated
+  readings; an outlook is based on its displayed date, not a continuous monitor.
 
 Unavailable measurements stay unavailable rather than becoming zero. A missing
 signal does not mean that signal was normal.
@@ -89,6 +107,17 @@ The dashboard uses personal history rather than population targets:
   keeping displayed metric series inside the requested period.
 - Sleep duration and sleep score count as one warning group in training guidance,
   not two independent warnings.
+- Display colors: all below-range values are red; above-range values are green
+  except HRV and stress, which are red. Within-range values are green.
+  Colors do not determine training cautions or medical meaning: lower stress
+  can be fine despite red, and higher resting heart rate can warrant attention
+  despite green. Above-range sleep,
+  sleep score, Body Battery, and HRV do not add training cautions. Below-range
+  stress and resting heart rate do not add cautions either. Higher HRV is not
+  automatically better; interpret it alongside other readings and how you feel.
+- Caution directions are lower HRV, sleep duration, sleep score, or Body Battery,
+  and higher resting heart rate or stress. These are contextual prompts, not
+  diagnoses or instructions based on a single number.
 
 ### Pattern rules
 
